@@ -1,0 +1,21 @@
+plugins {
+    id 'org.springframework.boot' version '3.4.5'
+}
+
+bootJar {
+    archiveFileName = 'api-application.jar'
+    launchScript()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation project(':core')
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+}
+
+springBoot {
+    mainClass = 'org.bexos.ApiApplication'
+}
