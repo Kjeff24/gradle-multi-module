@@ -1,4 +1,4 @@
-# Maven Multi Module
+# Gradle Multi Module
 A multi-module project structure for your microservice application using Gradle. Separate modules can handle functionalities like core business logic, data access, and API layer.
 
 ## 🔧 Project Setup
